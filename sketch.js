@@ -17,9 +17,9 @@ function setup() {
 
 	//Create the Bodies Here.
 
-	box1 = new Box(660,650,200,30)
-	box2 = new Box(745,600,30,100)
-	box3 = new Box(575,600,30,100)
+	box1 = new Box(610,650,200,30)
+	box2 = new Box(695,600,30,100)
+	box3 = new Box(525,680,30,100)
 
 	ground1 = new Ground(400,675,800,30)
 	
@@ -47,7 +47,7 @@ function draw() {
 
 function keyPressed(){
 	if (keyCode === UP_ARROW){
-		Matter.Body.applyForce(ball1.body,ball1.body.position,{x:1,y:-7})
+		Matter.Body.applyForce(ball1.body,ball1.body.position,{x:1,y:-6.712})
 	}
 }
 

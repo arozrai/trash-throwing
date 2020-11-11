@@ -14,9 +14,9 @@ class Ball {
       var pos =this.body.position;
       push();
       translate(pos.x, pos.y);
-      rectMode(CENTER);
       fill(255,0,255);
       ellipse(0, 0, this.radius);
+      ellipse(CENTER);
       pop();
     }
   };
