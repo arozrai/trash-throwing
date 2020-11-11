@@ -47,7 +47,7 @@ function draw() {
 
 function keyPressed(){
 	if (keyCode === UP_ARROW){
-		Matter.Body.applyForce(ball1.body,ball1.body.position,{x:1,y:-6.712})
+		Matter.Body.applyForce(ball1.body,ball1.body.position,{x:1,y:-6.705})
 	}
 }
 
