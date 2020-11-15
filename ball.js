@@ -15,8 +15,8 @@ class Ball {
       push();
       translate(pos.x, pos.y);
       fill(255,0,255);
-      ellipse(0, 0, this.radius);
-      ellipse(CENTER);
+      ellipseMode(RADIUS);
+      ellipse(0, 0, this.radius,this.ellipse);
       pop();
     }
   };

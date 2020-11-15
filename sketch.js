@@ -19,11 +19,11 @@ function setup() {
 
 	box1 = new Box(610,650,200,30)
 	box2 = new Box(695,600,30,100)
-	box3 = new Box(525,680,30,100)
+	box3 = new Box(525,600,30,100)
 
 	ground1 = new Ground(400,675,800,30)
 	
-	ball1 = new Ball(100,100,30)
+	ball1 = new Ball(100,100,20)
 	Engine.run(engine);
   
 }
@@ -41,13 +41,13 @@ function draw() {
  
   ball1.display()
 
-  keyPressed()
+  //keyPressed()
   drawSprites();
 }
 
 function keyPressed(){
 	if (keyCode === UP_ARROW){
-		Matter.Body.applyForce(ball1.body,ball1.body.position,{x:1,y:-6.705})
+		Matter.Body.applyForce(ball1.body,ball1.body.position,{x:55,y:-60})
 	}
 }
 
